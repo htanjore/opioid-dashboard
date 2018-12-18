@@ -78,11 +78,4 @@
   }
     
  
-  #   output$click <- renderPrint({
-  #     d <- event_data("plotly_click")
-  #     if (is.null(d)) "Click on a state to view event data" else d
-  #   })
-  #   
-  # }
-  
 
