@@ -1,7 +1,7 @@
 
 # Define server logic required to draw a histogram
    
-  server <- function(input, output, session) {
+  server <- function(input, output) {
     
     output$plot <- renderPlotly({
       # specify some map projection/options
@@ -75,31 +75,14 @@
         theme_bw()
 
    })
-    
-    # output$plot3 <- renderPlot({
-    #   # specify some map projection/options
-    # 
-    #   # filter overdoses_shiny based on Year
-    #   data <- opioids_prescriptions_2013_2016_shiny %>%
-    #     filter(Drug_Name ==  input$opioid,State == input$state)
-    # 
-    #   ggplot(data, aes(Year, Prescriptions_per_100000, group = State, color = State)) +
-    #     geom_line(size = 1) +
-    #     scale_y_continuous(labels = comma)+
-    #     geom_point(size=3, shape=21, aes(fill=factor(State)))+
-    #     labs(color = "US State", fill = 'US State')+
-    #     ylab('Prescribtion per 100000 residents') +
-    #     xlab('Year') +
-    #     ggtitle('     Opioid Prescriptions Rate') +
-    #     theme_bw()
-    # 
-    # })
-    
-    output$click <- renderPrint({
-      d <- event_data("plotly_click")
-      if (is.null(d)) "Click on a state to view event data" else d
-    })
-    
   }
+    
+ 
+  #   output$click <- renderPrint({
+  #     d <- event_data("plotly_click")
+  #     if (is.null(d)) "Click on a state to view event data" else d
+  #   })
+  #   
+  # }
   
 

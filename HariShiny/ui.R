@@ -1,8 +1,8 @@
 library(shinythemes)
 # Define UI
 shinyUI(
-  fluidPage(theme=shinytheme('superhero'),
-    dashboardPage(skin = 'red',
+             fluidPage(theme = shinythemes::shinytheme("superhero"),
+    dashboardPage(
         dashboardHeader(title = 'Opioid Overdoses', titleWidth = 1600),
         dashboardSidebar(tags$blockquote('More than 72,000 Americans 
                          died from drug overdoses in 2017, 
@@ -18,9 +18,10 @@ shinyUI(
                     label = "State", 
                     choices = states,
                     selected = 'State')),
-        
+       
         
         dashboardBody(
+          
             tags$head( 
             tags$style(HTML(".main-sidebar { font-size: 20px; }")) 
           ),
@@ -42,18 +43,10 @@ shinyUI(
 )
 
 
+
                     
            
-      
-# selectInput("opioid",
-#             label = "Opioid:",
-#             choices = opioids,
-#             
-#             selected = 'ACETAMINOPHEN-CODIENE')),
-  
-
-
-
+ 
 
 
 
