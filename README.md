@@ -1,6 +1,6 @@
 # opioid-dashboard
-opioid dashboard for NSS cohort 2 midcourse project
+opioid dashboard for NSS data Science cohort 2 midcourse project.
 
 
- https://haritanjore.shinyapps.io/HariShiny/
+Shiny App: https://haritanjore.shinyapps.io/HariShiny/
 
